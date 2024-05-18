@@ -1,0 +1,696 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Rosario';
+  src: url('fontes/Rosario/ttf/Rosario-Regular.ttf') format('truetype'),
+       url('fontes/Rosario/woff2/Rosario-Regular.woff2') format('woff2'),
+       url('fontes/Rosario/woff/Rosario-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #02000F;
+  max-width: 100hz;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+p {
+  font-size: 23px;
+  font-family: Rosario;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+h1{
+  font-size: 45px;
+  color: white;
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+li{list-style: none;}
+
+
+header{
+  padding: .3em 3em;
+  background: #180F1F;
+  box-shadow: 0px 1px #bbbbbb;
+  max-width: 100%;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header nav .logos{
+  display: flex;
+  align-items: center;
+}
+
+header nav .logos .logo-site img{
+  padding-right: 15px;
+  width: 60px;
+  height: 75px;
+}
+
+
+
+header nav .pesquisa{
+  background-color: white;
+  align-items: center;
+  border-radius: 40px;
+  margin-left: 15px;
+}
+
+header nav .pesquisa form{
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+}
+
+header nav .pesquisa form #pesq_input:focus{
+  outline: 0;
+  width: 11em;
+  
+}
+
+header nav .pesquisa:hover #pesq_input{
+  width: 11em;
+  transition-duration: 0.3s; 
+  transition-timing-function: ease;
+  animation-iteration-count: infinite;
+  
+}
+
+header nav .pesquisa:not(:hover) #pesq_input{
+  width: 2px;
+  transition-duration: 0.3s; 
+  transition-timing-function: ease;
+  animation-iteration-count: infinite;
+
+}
+header nav .pesquisa form #pesq_input{
+  border: none;
+  background: none;
+  width: 1px;
+  color: black;
+  transform-origin: left;
+  
+  
+}
+
+header nav .pesquisa form input[type=image]{
+  padding: 10px;
+}
+
+
+header nav{
+  display: flex;
+  align-items: center;
+}
+
+header nav ol{
+  color: white;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+header nav ol li{
+  color: #FFF;
+  font-family: Source Serif Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 1.2em;
+}
+
+header nav ol li a{
+  color: #FFF;
+  font-family: Source Serif Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+header nav ol .baixar a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-family: Source Serif Pro;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 40px;
+  width: 95px;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+header nav ol .baixar a{
+  color: black;
+}
+
+header nav ol .baixar a:hover{
+  background-color: rgb(194, 194, 194);
+}
+
+
+/* DESTAQUE DE PAGINA */
+
+.destaque {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+.destaque .destaque-fixo {
+  position: absolute;
+  width: 100%;
+  height: 480px;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.destaque .destaque-fixo figure{
+  bottom: 0;
+  right:0;
+  position: absolute;
+  padding: 3em;
+}
+
+.destaque .destaque-fixo .sociais-destaque{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: self-start;
+  padding:1.5em;
+  right:0;
+  top:0;
+}
+
+.destaque .destaque-fixo .sociais-destaque li a img{
+  width: 32px;
+  height: 32px;
+}
+
+.destaque .destaque-fixo .sociais-destaque li{
+  list-style: none;
+  padding: .5em;
+
+}
+
+.destaque .destaque-fixo span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.destaque .destaque-fixo span img{
+  text-align: center;
+
+  width: 720px;
+  height: 268px;
+}
+
+.destaque .destaque-fixo p{
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  padding: 4em;
+  font-weight: bold;
+}
+
+
+
+
+/* SLIDER*/
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 422px;
+  overflow: hidden;
+}
+
+.carousel .slider-container {
+  display: flex;
+  
+}
+
+.carousel .slide {
+  flex: 0 0 100%;
+}
+
+.slide video {
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+}
+
+
+
+/*MAIN*/
+
+main .apresentacao{
+  padding-top: 4em;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+
+.marca-caçador {
+  position: absolute;
+  left: 50%;
+  padding-top: 5em;
+  transform: translate(-50%, -50%);
+}
+
+main .marca-caçador img{
+  width: 300px;
+  left: 50%;
+
+}
+
+main .apresentacao p{
+  color:white;
+}
+
+main .apresentacao .fraseEfeito{
+  left: 50%;
+  padding-top: 1em;
+  padding-bottom: 5em;
+ 
+}
+
+main .apresentacao .section1-anuncio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+main .apresentacao div{
+  display: flex;
+  padding-bottom: 3em;
+  justify-content: space-between;
+
+}
+main .apresentacao div span{
+  width: 35em;
+}
+
+main .apresentacao .section1-anuncio .trailer span p{
+  text-align: center;
+}
+
+main .apresentacao div figure img{
+  width: 470px;
+  height: 250px;
+  
+}
+
+
+main .apresentacao div span h1,main div span h2{
+  font-size: 48px;
+  color: white;
+  font-family: Source Serif Pro;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.player-trailer{
+  width: 200px;
+  height: 280px;
+}
+
+main .apresentacao div #sobre-jogo ol{
+  padding-left: 3em;
+  padding-top: 1em;
+  list-style: circle;
+}
+
+main .apresentacao div #sobre-jogo p{
+  text-align: left;
+}
+main .apresentacao div #sobre-jogo ol li{
+  color:white;
+  font-size: 20px;
+}
+
+
+/*DESTAQUE 2*/
+
+
+main #destaque2 .texto-banner2 {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  z-index: 3;
+  margin-top: 20px;
+}
+
+main #destaque2 .texto-banner2 h1{
+  padding-bottom: 1em;
+}
+
+main #destaque2 .texto-banner2 p{
+  font-family: IM FELL French Canon SC;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+main #destaque2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10em;
+}
+
+main #destaque2 .container-imagem {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+
+#movendo {
+  height: auto;
+  animation: movendo 40s linear infinite;
+}
+
+@keyframes movendo {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  3% {
+    transform: translateX(0);
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+  96%{
+    transform: translateX(-67%);
+    opacity: 0.9; 
+  }
+  100% {
+    transform: translateX(-70%);
+    opacity: 0;
+  }
+}
+
+
+/*PACOTES SECTION*/
+
+main .pacotes{
+  padding: 5em 10em;
+  background: #090819;
+}
+
+main .pacotes h1{
+  text-align: center;
+  padding-bottom: 1.2em;
+
+}
+main .pacotes ol{
+  width: 100%;
+  border-bottom: 1px rgb(255, 255, 255) solid;
+  border-top: 1px rgb(255, 255, 255) solid;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .pacotes ol li a img{
+  padding-bottom: 0.5em;
+  width: 70px;
+  height: 70px;
+}
+
+main .pacotes ol li a p{
+  text-align: center;
+  font-size: 23px;
+}
+
+main .pacotes ol li a h2{
+  font-size: 28px;
+  width: 100%;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* <diferentes cores nos cards>*/
+
+main .pacotes ol .sonhosEsquecidos a h2{
+  color: #E27CCA;
+  border-bottom: #E27CCA 1px solid;
+}
+
+main .pacotes ol .trupeGrimm a h2{
+  color: #EF333F;
+  border-bottom: #EF333F 1px solid;
+}
+
+main .pacotes ol .sangueVital a h2{
+  color: #349DFF;
+  border-bottom: #349DFF 1px solid;
+}
+
+main .pacotes ol .deusMestre a h2{
+  color: #DA9E61;
+  border-bottom: #DA9E61 1px solid;
+}
+
+
+main .pacotes ol .sonhosEsquecidos a span{
+  color: #E27CCA;
+}
+
+main .pacotes ol .trupeGrimm a span{
+  color: #EF333F;
+}
+
+main .pacotes ol .sangueVital a span{
+  color: #349DFF;
+}
+
+main .pacotes ol .deusMestre a span{
+  color: #DA9E61;
+}
+
+/* </diferentes cores nos cards>*/
+
+main .pacotes ol li a{
+  color: white;
+  height: 333px;
+  width: 270px;
+  border-radius: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #332F44;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+main .pacotes ol li a:hover{
+  background-color: #363348;
+}
+
+
+/*            Footer                 */
+
+main footer{
+  height: auto;
+  height: 386px;
+  background-image: url(imagens/background-footer.svg);
+  padding: 0 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: 100%;
+  background-size: auto;
+}
+
+main footer .top-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: white 2px solid;
+  padding-bottom: 2em;
+}
+
+main footer .top-footer figure{
+  display: flex;
+  align-items: center;
+}
+
+main footer .top-footer .Team_Unity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main footer .top-footer .Team_Unity span{
+  padding: 0 1em;
+}
+
+main footer .top-footer .logos_footer{
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+  padding-right: 1.4em;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+main footer .top-footer ol{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main footer .top-footer ol li #facebook_teamcherry{
+  padding: 0 1em;
+}
+main footer .bottom-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+}
+
+main footer .bottom-footer a{
+  width: 121px;
+  text-align: end;
+}
+
+main footer .bottom-footer #team_cherry_logo img{
+  
+  width: 80px;
+}
+
+main footer .bottom-footer #direito-autoral{
+  color: #FFFFFF;
+  font-size: 16px;
+  
+}
+
+main .soundtracks{
+  height: 300px;
+  padding: 5em 10em;
+  background: #090819;
+  display: flex;
+  justify-content: space-between;
+}
+
+main .soundtracks div{
+  padding-right: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main .soundtracks div p{
+  color: #FFFFFF;
+  text-align: left;
+}
+
+main .soundtracks div p a{ 
+  color: #000000;
+}
+main .soundtracks ol{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px
+}
+
+main .soundtracks ol li{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+main .soundtracks ol li .soundtrack-image{
+  width: 230px;
+}
+
+main .soundtracks ol li p a, main .soundtracks ol li p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+main .soundtracks .botao-spotify-2 a{
+  background-color: white;
+  font-size: 20px;
+  width: 131px;
+  height: 39px;
+}
+
+main .soundtracks .botao-spotify-2 a:hover, main .soundtracks .botao-spotify-1 a:hover{
+  background-color: rgb(194, 194, 194);
+}
+
+main .soundtracks .botao-spotify-2 a img{
+  padding-right: 5px;
+}
+
+main .soundtracks .botao-spotify-1 a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-size: 20px;
+  width: 365px;
+  height: 54px;
+}
+
+/*                  Criadores                */
