@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400,600,700&display=swap">
   <link href="src/hollow.css" rel="stylesheet" type="text/css"/>
   <link href="src/imagens/logo.svg" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   
 </head>
 
@@ -16,8 +18,14 @@
   <header>
     <nav>
       <div class="logos">
-        <h1 class="logo-site"><a href="#"><img alt="Logo do site." src="src/imagens/logo.svg"></a></h1>
-        <h2><a href="#"><img src="src/imagens/hornet_vetor.svg" alt="Ícone da Hornet"></a></h2>
+        
+        <h1 class="logo-site">
+          <a href="index.html"><img alt="Logo do site." src="src/imagens/logo.svg"></a>
+        </h1>
+        <h2>
+          <a href="#"><img src="src/imagens/hornet_vetor.svg" alt="Ícone da Hornet"></a>
+        </h2>
+
       </div>
   
       <div class="pesquisa">
@@ -35,11 +43,11 @@
 
     <nav>
       <ol>
-        <li><a>Pacotes</a></li>
+        <li><a href="#">Pacotes</a></li>
         <li><a href="criadores.html">Criadores</a></li>
 
         <li class="baixar">
-          <a href="#">Baixar</a>
+          <a href="baixar.html">Baixar</a>
         </li>
 
         <li><a href="https://www.teamcherry.com.au" target="_blank"><img src="src/imagens/team_cherry.svg" alt=""></a></li>
@@ -52,23 +60,29 @@
   <div class="destaque">
     <div class="destaque-fixo">
       <p>Hollow Knight is © Copyright 2024 Team Cherry</p>
+
+      <div class="controleslider">
+        <a href="javascript:backSlide()"><img src="src/imagens/ferrão (1).svg"></a>
+        <a href="javascript:nextSlide()"><img src="src/imagens/ferrão.svg"></a>
+      </div>
+
       <span>
         <h1><img src="src/imagens/Voidheart_Edition_Title.png" alt="Logo oficial do jogo 'HOLLOW KNIGHT'."></h1>
       </span>
       <ol class="sociais-destaque">
         <li>
-          <a href="https://twitter.com/TeamCherryGames" target="_blank"><img src="src/imagens/twitter.svg" alt="Siga-nos no twitter."></a>
+          <a href="https://twitter.com/TeamCherryGames" target="_blank"><img src="src/imagens/logos/twitter.svg" alt="Siga-nos no twitter."></a>
         </li>
 
         <li>
-          <a href="https://www.facebook.com/teamcherrygames/" target="_blank"><img src="src/imagens/Facebook.svg" alt="Siga-nos no facebook."></a>
+          <a href="https://www.facebook.com/teamcherrygames/" target="_blank"><img src="src/imagens/logos/Facebook.svg" alt="Siga-nos no facebook."></a>
         </li>
         <li>
           <a href="https://www.youtube.com/channel/UCZS2K8ZsUmujTuj3cNMyBSA" target="_blank">
-          <img src="src/imagens/youtube.svg" alt="Veja nosso canal no youtube.">
+          <img src="src/imagens/logos/youtube.svg" alt="Veja nosso canal no youtube.">
         </a></li>
       </ol>
-      <figure><img src="src/imagens/unity_logo.svg" alt="Logo da Game Unity."></figure>
+      <figure><img src="src/imagens/Logos/unity_logo.svg" alt="Logo da Game Unity."></figure>
 
 
     </div>
@@ -131,23 +145,23 @@
     <figure class="marca-caçador">
       <img src="src/imagens/The_Hunters_Journal_Frame_Upper.png" alt="Marca do caçador.">
     </figure>
-    <section class="apresentacao">
+    <section data-aos="fade-up" class="apresentacao">
       <p class="fraseEfeito">"Abaixo da cidade moribunda de Dirtmouth jaz um reino antigo e arruinado. Muitos são atraídos<br> para o subterrâneo em bussca de riquezas, glórias ou respostas para antigos segredos."</p>
 
-        <div>
+        <div data-aos="fade-up">
           <span>
             <h1>Desbrave as Profundezas de<br> um Reino Esquecido</h1>
             <p>Abaixo da cidade desvanecente de Dirtmouth repousa um vasto e antigo reino. Muitos são atraídos da superfície, em busca de riquezas, glóriasou respostas para antigos segredos. Como o enigmático Cavavleiro, você percorrerá as Profundezas, desvendará seus mistérios e conquistará seus males.</p>  
           </span>
 
-          <figure>
+          <figure data-aos="fade-up">
             <img src="src/imagens/pngfind 1.svg" alt="Dois prints do jogo.">
           </figure>
         </div>
 
         <div>
-          <div id="player-trailer"></div>
-          <span id="sobre-jogo">
+          <div data-aos="fade-up" id="player-trailer"></div>
+          <span data-aos="fade-up" id="sobre-jogo">
             <h2>Utilize suas Habilidades e<br> Reflexos para Sobreviver</h2>
             <p>Hollow Knight é um desafiador jogo de ação e aventura em 2D. Você explorará cavernas sinuosas, enfrentará criaturas comrrompidas e escapaá de intricadas marmadilhas, tudo para resolver um antigo mistério há muito tempo oculto.</p>
             <ol>
@@ -174,8 +188,8 @@
     </section>
 
     <section class="pacotes">
-      <h1>Hollow Knight se Expande com 4<br> Grandes Pacotes de Conteúdo Gratuito!</h1>
-      <ol>
+      <h1 data-aos="fade-up" >Hollow Knight se Expande com 4<br> Grandes Pacotes de Conteúdo Gratuito!</h1>
+      <ol data-aos="fade-up">
         <li class="sonhosEsquecidos">
           <a href="#">
             <img src="src/imagens/pacotes/sonhos_icon.svg" alt="Icone do pacote Sonhos esquecidos.">
@@ -210,79 +224,171 @@
       </ol>
     </section>
     <section class="soundtracks">
-      <div>
-        <h1>Uma Trilha Orquestral Assombrosa</h1>
+      <div data-aos="fade-up">
+        <h1 >Uma Trilha Orquestral Assombrosa</h1>
         <p>Composta e produzida por Christopher Larkin, a trilha épica de Hollow Knight é entrelaçada ao longo do jogo, ecoando a tristeza de uma civilização majestosa levada à ruína.</p>
         <p class="botao-spotify-1"><a href="https://christopherlarkin.bandcamp.com/album/hollow-knight-original-soundtrack" target="_blank">Adquira a Trilha Sonora Oficial</a></p>
       </div>
-      <ol>
+      <ol data-aos="fade-up">
         <li>
           <img class="soundtrack-image" src="src/imagens/ad1.jpg">
-          <p class="botao-spotify-2"><a href="https://open.spotify.com/intl-pt/artist/13kMpt8IdcHcdxPLcJrgU2" target="_blank"><Img src="src/imagens/spotify.svg"></Img>Ouvir</a></p>
+          <p class="botao-spotify-2"><a href="https://open.spotify.com/intl-pt/artist/13kMpt8IdcHcdxPLcJrgU2" target="_blank"><Img src="src/imagens/logos/spotify.svg"></Img>Ouvir</a></p>
         </li>
         <li>
           <img class="soundtrack-image" src="src/imagens/ad2.jpg">
-          <p class="botao-spotify-2"><a href="https://open.spotify.com/intl-pt/artist/13kMpt8IdcHcdxPLcJrgU2" target="_blank"><Img src="src/imagens/spotify.svg"></Img>Ouvir</a></p>
+          <p class="botao-spotify-2"><a href="https://open.spotify.com/intl-pt/artist/13kMpt8IdcHcdxPLcJrgU2" target="_blank"><Img src="src/imagens/logos/spotify.svg"></Img>Ouvir</a></p>
         </li>
       </ol>
     </section>
 
-    <section>
-      <h1>Visite também nossos amigos</h1>
+    <section class="parceiros">
+      <h1 data-aos="fade-up">Visite também nossos amigos</h1>
+      <ol data-aos="fade-up">
+        <li>
+          <figure>
+            <img src="src/imagens/Logos/fangamer.svg" alt="Fangamer">
+          </figure>
+          <p>Larvas de pelúcia! Cavaleiros de pelúcia! Camisetas Rad e muito mais</p>
+          <p><a href="https://www.fangamer.com/collections/hollow-knight" target="_blank">FANGAMER.COM</a></p>
+        </li>
+    
+        <li>
+          <figure>
+            <img src="src/imagens/Logos/logo yetee.svg" alt="Yetee">
+          </figure>
+          <p>Camisetas elegantes! Pinos elegantes! O Yetee mais legal e amigável que conhecemos!</p>
+          <p><a href="https://theyetee.com/collections/hollow-knight" target="_blank">THEYETEE.COM</a></p>
+        </li>
+    
+        <li>
+          <figure>
+            <img src="src/imagens/Logos/logoghost.svg" alt="Ghostramp">
+          </figure>
+          <p>Lançamentos limitados de vinil!</p>
+          <p><a href="https://store.ghostramp.com/collections/videogames" target="_blank">GHOSTRAMP.COM</a></p>
+        </li>
+      </ol>
     </section>
 
+    <section class="imprensa">
+      <h1 data-aos="fade-up">Cobertura de imprensa</h1>
+      <figure data-aos="fade-up">
+        <img src="src/imagens/Logos/imprensa.svg">
+      </figure>
 
-    <footer>
-      <div class="top-footer">
-        <div class="logos_footer">
-          <a href="index.html">
-            <img src="src/imagens/logo.svg" alt="Logo do nosso site!">
-          </a>
-  
-          <a href="#">
-            <img src="src/imagens/hornet_vetor.svg" alt="Simbolo do jogo Silksong!">
-          </a>
+      <div data-aos="fade-up" class="kitpress">
+        <figure><img src="src/imagens/charactersbanner.svg"></figure>
+        <div>
+          <p>Se você quiser escrever sobre Hollow Knight, temos um Press Kit cheio de vídeos, fatos e imagens.</p>
+          <span><p>Dúvidas? Entre em contato: press (at) teamcherry.com.au</p></span>
+          <p><a href="https://drive.google.com/drive/folders/1SPCRaalJJepKYOQ4fdxZEzqNukJiUQCo" target="_blank">VISITE O KIT DE IMPRENSA</a></p>
         </div>
         
-          
-          
-        <div class="Team_Unity">
-          <a href="https://www.teamcherry.com.au/games"><img src="src/imagens/team charry_logo2.svg"></a>
-          <span><img src="src/imagens/x.svg"></span>
-          <a href="https://unity.com/pt"><img src="src/imagens/gameunity_naovetor.svg"></a>
-        </div>
-
-        <ol class="sociais-destaque">
-          <li>
-            <a href="https://twitter.com/TeamCherryGames" target="_blank"><img src="src/imagens/twitter.svg" alt="Siga-nos no twitter."></a>
-          </li>
-  
-          <li>
-            <a id="facebook_teamcherry" href="https://www.facebook.com/teamcherrygames/" target="_blank"><img src="src/imagens/Facebook.svg" alt="Siga-nos no facebook."></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCZS2K8ZsUmujTuj3cNMyBSA" target="_blank">
-            <img src="src/imagens/youtube.svg" alt="Veja nosso canal no youtube.">
-          </a></li>
-        </ol>
-
       </div>
-      <div class="bottom-footer">
-        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">
-          <img src="src/imagens/steamlogo.svg" alt="Logo da plataforma Steam.">
-        </a>
+    </section>
 
-        <p id="direito-autoral">Hollow Knight é © Copyright 2024 Team Cherry.</p>
+    <section class="destaque3">
+      <h1 data-aos="fade-up">Media de avaliações do jogo<br> em multiplataformas</h1>
+      <ol data-aos="fade-up">
+        <li>
+          <figure>
+            <img src="src/imagens/Logos/steam.svg">
+          </figure>
+          <h2>97%</h2>
+          <p>310k análises</p>
+        </li>
 
-        <a href="https://www.teamcherry.com.au" id="team_cherry_logo">
-          <img src="src/imagens/teamcharry-logo.svg" alt="Logo do site da Team Cherry.">
-        </a> 
-      </div>
+        <li>
+          <figure>
+            <img src="src/imagens/Logos/gogcom.svg">
+          </figure>
+          <h2>94%</h2>
+          <p>De aprovação</p>
+        </li>
+
+        <li>
+          <figure>
+            <img src="src/imagens/Logos/PS4.svg">
+          </figure>
+          <h2>93.8%</h2>
+          <p>51k de votos</p>
+        </li>
+
+        <li>
+          <figure>
+            <img src="src/imagens/Logos/humblestore.svg">
+          </figure>
+          <h2>93%</h2>
+          <p>Média das reviews</p>
+        </li>
+
+        <li>
+          <figure>
+            <img src="src/imagens/Logos/xbox.svg">
+          </figure>
+          <h2>92%</h2>
+          <p>5.3K de votos.</p>
+        </li>
+        
+      </ol>
       
-    </footer>
-    
+    </section>
   </main>
   
+  <footer>
+    <div class="top-footer">
+      <div class="logos_footer">
+        <a href="index.html">
+          <img src="src/imagens/logo.svg" alt="Logo do nosso site!">
+        </a>
+
+        <a href="#">
+          <img src="src/imagens/hornet_vetor.svg" alt="Simbolo do jogo Silksong!">
+        </a>
+      </div>
+      
+        
+        
+      <div class="Team_Unity">
+        <a href="https://www.teamcherry.com.au/games"><img src="src/imagens/Logos/team charry_logo2.svg"></a>
+        <span><img src="src/imagens/x.svg"></span>
+        <a href="https://unity.com/pt"><img src="src/imagens/gameunity_naovetor.svg"></a>
+      </div>
+
+      <ol class="sociais-destaque">
+        <li>
+          <a href="https://twitter.com/TeamCherryGames" target="_blank"><img src="src/imagens/Logos/twitter.svg" alt="Siga-nos no twitter."></a>
+        </li>
+
+        <li>
+          <a id="facebook_teamcherry" href="https://www.facebook.com/teamcherrygames/" target="_blank"><img src="src/imagens/Logos/Facebook.svg" alt="Siga-nos no facebook."></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCZS2K8ZsUmujTuj3cNMyBSA" target="_blank">
+          <img src="src/imagens/Logos/youtube.svg" alt="Veja nosso canal no youtube.">
+        </a></li>
+      </ol>
+
+    </div>
+    <div class="bottom-footer">
+      <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">
+        <img src="src/imagens/Logos/steamlogo.svg" alt="Logo da plataforma Steam.">
+      </a>
+
+      <p id="direito-autoral">Hollow Knight é © Copyright 2024 Team Cherry.</p>
+
+      <a href="https://www.teamcherry.com.au" id="team_cherry_logo">
+        <img src="src/imagens/Logos/teamcharry-logo.svg" alt="Logo do site da Team Cherry.">
+      </a> 
+    </div>
+    
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 </html>
