@@ -1,4 +1,4 @@
-# Site Hollow Knight recriado
+# Recriação do site Hollow Knight
 Redesign do site do jogo Hollow Knight
 
 > [!IMPORTANT]\
