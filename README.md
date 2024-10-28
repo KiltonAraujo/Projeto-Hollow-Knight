@@ -6,8 +6,8 @@ Redesign do site do jogo Hollow Knight
 
 ## Layout
 <div >
-  <img width=49% src="src/assets/thehome.jpg">
-  <img align=top width=49% src="src/assets/baixar.png">
+  <img width=49% src="src/assets/print-home-1.png">
+  <img align=top width=49% src="src/assets/print-home-2.png">
 </div>
 
 ## Introdução
