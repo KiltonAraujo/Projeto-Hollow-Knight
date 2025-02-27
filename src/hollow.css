@@ -11,7 +11,10 @@ h1,h2,h3,h4,h5,h6,p,a, span{
 
 body {
   background-color: #F8FAFD;
-  max-width: 100hz;
+  max-width: 200em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 *::-webkit-scrollbar {
@@ -46,7 +49,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  box-sizing: border-box;
+  width: 100%;
 }
 
 header div figure h1{
@@ -214,14 +218,15 @@ header div .pesquisa form input[type=image]{
 
 #destaque {
   position: relative;
-  width: 100%;
-  height: 450px;
+  width: 97%;
+  margin-top: 1em;
+  height: 377px;
 }
 
 #destaque .fixo {
   position: absolute;
   width: 100%;
-  height: 480px;
+  height: 377px;
   max-height: 450px;
   display: flex;
   flex-direction: column;
@@ -234,34 +239,44 @@ header div .pesquisa form input[type=image]{
   z-index: 40;
   top: 0;
   box-sizing: border-box;
-  padding: 0.5em 2.5em;
+  padding: 0.4em 3em;
   background-color: #F8FAFD;
   position: absolute;
-  display: flex
-;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   width: 14em;
   border-radius: 0em 0em 2em 2em;
 }
 
+#destaque .fixo #controles img{
+  height: 35px;
+}
+
 #destaque .fixo #controles .seta{
   height: 20px;
+}
+
+#destaque .fixo h1{
+  color: white;
+  font-size: 57px;
+  margin-bottom: -4px;
 }
 
 #destaque .fixo p{
   color: white;
   font-size: 14px;
-  font-weight: bold;
-  max-width: 500px;
+  font-weight: 400;
+  max-width: 570px;
 }
 
 /* SLIDER*/
 #destaque .carousel {
   position: relative;
   width: 100%;
-  height: 422px;
+  height: 377px;
   overflow: hidden;
+  border-radius: 1.5em;
 }
 
 #destaque .carousel .slider-container {
@@ -275,7 +290,7 @@ header div .pesquisa form input[type=image]{
 
 #destaque .carousel .slider-container .slide video {
   width: 100%;
-  height: 540px;
+  height: 377px;
   object-fit: cover;
 }
 
