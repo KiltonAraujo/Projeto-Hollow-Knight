@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Hollow Knight</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400,600,700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="src/hollow.css" rel="stylesheet" type="text/css"/>
-  <link href="src/imagens/logo.svg" rel="icon">
+  <link href="src/imagens/icons/knight-logo.svg" rel="icon">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   
@@ -16,80 +18,48 @@
 <body>
   
   <header>
-    <nav>
-      <div class="logos">
+     <div>
+      <figure>
+        <img src="src/imagens/icons/knight-logo.svg">
+        <h1>HOLLOW KNIGHT</h1>
+      </figure>
         
-        <h1 class="logo-site">
-          <a href="index.html"><img alt="Logo do site." src="src/imagens/logo.svg"></a>
-        </h1>
-        <h2>
-          <a href="#"><img src="src/imagens/hornet_vetor.svg" alt="Ícone da Hornet"></a>
-        </h2>
-
-      </div>
-  
-      <div class="pesquisa">
-        <form class="pesquisar">
-          <input id="img_imput" 
-            type="image" placeholder="Pesquisar" alt="icone de pesquisa" src="src/imagens/searc_vetor.svg">
-          
-          <input 
-            id="pesq_input"
-            type="search" placeholder="Pesquisar">
-        </form>
-      </div>
-    </nav>
+        <div class="pesquisa">
+          <form class="pesquisar">
+            <input id="img_imput" type="image" placeholder="Pesquisar" alt="icone de pesquisa" src="src/imagens/icons/search.svg"> 
+            <input id="pesq_input"type="search" placeholder="Pesquisar">
+          </form>
+        </div>
+     </div>
     
 
     <nav>
       <ol>
-        <li><a href="#">Pacotes</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pacotes.html">Pacotes</a></li>
         <li><a href="criadores.html">Criadores</a></li>
-
-        <li class="baixar">
-          <a href="baixar.html">Baixar</a>
-        </li>
-
-        <li><a href="https://www.teamcherry.com.au" target="_blank"><img src="src/imagens/team_cherry.svg" alt=""></a></li>
+        <li><a href="baixar.html" class="baixar">Baixar</a></li>
+        <li><a href="https://www.teamcherry.com.au" target="_blank"><img src="src/imagens/icons/team-cherry.svg" alt="Logo team cherry"></a></li>
       </ol>
     </nav>
     
   </header>
 
 
-  <div class="destaque">
-    <div class="destaque-fixo">
-      <p>Hollow Knight is © Copyright 2024 Team Cherry</p>
-
-      <div class="controleslider">
-        <a href="javascript:backSlide()"><img src="src/imagens/ferrão (1).svg"></a>
-        <a href="javascript:nextSlide()"><img src="src/imagens/ferrão.svg"></a>
+  <section id="destaque">
+    <div class="fixo">
+      <div id="controles">
+        <a href="javascript:backSlide()"><img class="seta" src="src/imagens/icons/left.svg" alt="Seta para a esquerda"></a>
+        <img src="src/imagens/icons/knight-logo.svg" alt="Logo do site">
+        <a href="javascript:nextSlide()"><img class="seta" src="src/imagens/icons/right.svg" alt="Seta para a direita"></a>
       </div>
 
-      <span>
-        <h1><img src="src/imagens/Voidheart_Edition_Title.png" alt="Logo oficial do jogo 'HOLLOW KNIGHT'."></h1>
-      </span>
-      <ol class="sociais-destaque">
-        <li>
-          <a href="https://twitter.com/TeamCherryGames" target="_blank"><img src="src/imagens/logos/twitter.svg" alt="Siga-nos no twitter."></a>
-        </li>
-
-        <li>
-          <a href="https://www.facebook.com/teamcherrygames/" target="_blank"><img src="src/imagens/logos/Facebook.svg" alt="Siga-nos no facebook."></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/channel/UCZS2K8ZsUmujTuj3cNMyBSA" target="_blank">
-          <img src="src/imagens/logos/youtube.svg" alt="Veja nosso canal no youtube.">
-        </a></li>
-      </ol>
-      <figure><img src="src/imagens/Logos/unity_logo.svg" alt="Logo da Game Unity."></figure>
-
-
+      <h1>Hollow Knight</h1>
+      <p>Abaixo da cidade de Dirtmouth repousa um vasto e antigo reino. Muitos são atraídos em busca de riquezas, glória ou respostas para antigos segredos.</p>
     </div>
-
+  
     <div class="carousel">
       <div class="slider-container">
-        
         <div class="slide">
           <video autoplay muted loop>
             <source src="src/videos/video1.mp4" type="video/mp4">
@@ -129,8 +99,7 @@
           <video autoplay muted loop>
             <source src="src/videos/video0.mp4" type="video/mp4">
           </video>
-        </div>
-        
+        </div>      
         <div class="slide">
           <video autoplay muted loop>
             <source src="src/videos/video8.mp4" type="video/mp4">
@@ -139,15 +108,10 @@
       </div>
     </div>
     
-  </div>
+  </section>
 
   <main>
-    <figure class="marca-caçador">
-      <img src="src/imagens/The_Hunters_Journal_Frame_Upper.png" alt="Marca do caçador.">
-    </figure>
     <section data-aos="fade-up" class="apresentacao">
-      <p class="fraseEfeito">"Abaixo da cidade moribunda de Dirtmouth jaz um reino antigo e arruinado. Muitos são atraídos<br> para o subterrâneo em bussca de riquezas, glórias ou respostas para antigos segredos."</p>
-
         <div data-aos="fade-up">
           <span>
             <h1>Desbrave as Profundezas de<br> um Reino Esquecido</h1>
