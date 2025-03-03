@@ -19,17 +19,21 @@ function updateCarousel() {
 
 setInterval(nextSlide, 20000);
 
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
 function onYouTubeIframeAPIReady() {
   new YT.Player('player-trailer', {
-      width: 540,
-      height: 330,
-      videoId: 'JuP47fRBsWg',
-      playerVars: {
-          'autoplay': 0,
-          'controls': 1,
-          'rel': 0,
-          'showinfo': 1
-      }
+    width: 540,
+    height: 330,
+    videoId: 'JuP47fRBsWg',
+    playerVars: {
+      'autoplay': 0,
+      'controls': 1,
+      'rel': 0,
+      'showinfo': 1
+    }
   });
 }
-
