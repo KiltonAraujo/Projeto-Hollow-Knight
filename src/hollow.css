@@ -384,11 +384,11 @@ main .apresentacao article header .texto{
 
 }
 
-main .apresentacao article figure {
+main .apresentacao article picture {
   max-width: 50%;
 }
 
-main .apresentacao article figure img {
+main .apresentacao article picture img {
   width: 100%;
   height: auto;
 }
@@ -636,6 +636,7 @@ main .soundtracks ol li{
 
 main .soundtracks ol li .banner{
   width: 100%;
+  border-radius: 20px;
   min-width: 276px;
 
 }
@@ -734,4 +735,178 @@ main footer .bottom-footer #direito-autoral{
 }
 
 
-/*                  Criadores                */
+/*                  Footer                */
+
+footer{
+  height: 236px;
+  background-image: url(imagens/background/background-footer.svg);
+  padding: 0 4em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-size:cover;
+  background-position: center;
+  box-sizing: border-box;;
+}
+
+footer div{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+footer div figure{
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+footer div ol{
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+footer div ol li a, footer nav ol li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease; 
+}
+
+footer div ol li a:hover, footer nav ol li a:hover{
+  transform: scale(1.1);
+}
+
+footer div ol li a, footer nav ol li a img{
+  max-height: 54px;
+}
+
+footer .texto{
+  font-weight: 400;
+}
+
+
+footer .texto, a, h1{
+  color: #FFFFFF;
+}
+
+footer nav{
+  border-top: #f1f1f1 .7px solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
+footer nav ol{
+  display: flex;
+  gap: 1em;
+}
+/*        responsividade rs rs rs rs rs         */
+
+@media screen and (max-width: 1450px) {
+  :root{
+    --padding: 4em 4em;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  
+  main .pacotes ol{
+    gap: 0.8em;
+  }
+
+  main .pacotes ol li {
+    width: 48%;
+    min-width: 270px;
+    min-height: 328.5px;
+  }
+}
+@media screen and (max-width: 1165px) {
+  main .soundtracks {
+    display: flex
+;   flex-direction: column;
+    align-items: start;
+    justify-content: none;
+    height: auto;
+  }
+
+  main .soundtracks article header {
+    max-width: 100%;
+  }
+
+  main .soundtracks ol {
+    margin-top: 1em;
+    gap: 2em;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  main .soundtracks ol li {
+    height: 348px;
+  }
+}
+@media screen and (max-width: 884px) {
+  .texto{
+    font-size: 15px;
+  }
+
+  .titulo {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  #destaque .fixo .titulo {
+    font-size: 50px;
+  }
+
+  #destaque .fixo .texto {
+    max-width: 85%;
+    font-size: 16px;
+  }
+
+  #destaque .fixo, #destaque .carousel{
+    height: 305px;
+  }
+
+  /* apresentação */
+  main .apresentacao article {
+    flex-direction: column;
+  }
+
+  main .apresentacao article header{
+    width: 100%;
+    max-width: none;
+  }
+
+  main .apresentacao article header .texto {
+    max-width: none;
+  }
+
+  main .apresentacao article picture {
+    max-width: 100%;
+}
+
+  /* pacotes */
+  main .pacotes ol{
+    gap: 0.8em;
+  }
+
+  main .pacotes ol li {
+    width: 100%;
+  }
+
+  main .pacotes ol li a div p{
+    max-width: 90%;
+  }
+
+  main .pacotes ol li a div{
+    justify-content: center;
+  }
+
+  /* soundtracks */
+  main .soundtracks ol {
+      width: 100%;
+  }
+}
