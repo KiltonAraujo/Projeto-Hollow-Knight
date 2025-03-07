@@ -870,6 +870,14 @@ footer nav ol{
     height: 305px;
   }
 
+  #destaque .fixo, #destaque{
+    height: 305px;
+  }
+  
+  main .apresentacao .aviso img {
+    width: 30px;
+  }
+
   /* apresentação */
   main .apresentacao article {
     flex-direction: column;
